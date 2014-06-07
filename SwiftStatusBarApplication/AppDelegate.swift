@@ -8,9 +8,27 @@
 
 import Cocoa
 
-class AppDelegate: NSObject, NSApplicationDelegate {
-                            
+class AppDelegate: NSObject, NSApplicationDelegate
+{
     @IBOutlet var window: NSWindow
+    @IBOutlet var popover : NSPopover
+    
+    let icon: IconView;
+    
+    init()
+    {
+        let bar = NSStatusBar.systemStatusBar();
+        
+        //statusItemWithLength expects CGFloat; NSVariableStatusItemLength is CInt
+        let length = CDouble(NSVariableStatusItemLength);
+        
+        let item = bar.statusItemWithLength(length);
+        
+        self.icon = IconView(imageName: "icon", item: item);
+        item.view = icon;
+        
+        super.init();
+    }
 
     func applicationDidFinishLaunching(aNotification: NSNotification?)
     {
@@ -24,15 +42,20 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     override func awakeFromNib()
     {
-        let bar = NSStatusBar.systemStatusBar();
+        //NSRectEdge is not enumerated yet; NSMinYEdge == 1
+        //@see NSGeometry.h
+        let edge = 1
+        let icon = self.icon
+        let rect = icon.frame
         
-        //statusItemWithLength expects CGFloat; NSVariableStatusItemLength is CInt
-        let length = CDouble(NSVariableStatusItemLength);
-        
-        let item = bar.statusItemWithLength(length);
-        
-        let icon = IconView(imageName: "icon", item: item);
-        item.view = icon;
+        icon.onMouseDown = {
+            if (icon.isSelected)
+            {
+                self.popover.showRelativeToRect(rect, ofView: icon, preferredEdge: edge);
+                return
+            }
+            self.popover.close()
+        }
     }
 }
 

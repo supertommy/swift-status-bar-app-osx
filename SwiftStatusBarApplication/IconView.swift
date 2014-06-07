@@ -14,6 +14,8 @@ class IconView : NSView
     var image: NSImage
     let item: NSStatusItem
     
+    var onMouseDown: () -> ()
+    
     var isSelected: Bool
     {
         didSet
@@ -31,6 +33,7 @@ class IconView : NSView
         self.image = NSImage(named: imageName)
         self.item = item
         self.isSelected = false
+        self.onMouseDown = {}
         
         let thickness = NSStatusBar.systemStatusBar().thickness
         let rect = CGRectMake(0, 0, thickness, thickness)
@@ -51,11 +54,11 @@ class IconView : NSView
     
     override func mouseDown(theEvent: NSEvent!)
     {
-        self.isSelected = true
+        self.isSelected = !self.isSelected;
+        self.onMouseDown();
     }
     
     override func mouseUp(theEvent: NSEvent!)
     {
-        self.isSelected = false
     }
 }
