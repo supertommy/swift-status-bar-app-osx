@@ -12,15 +12,27 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                             
     @IBOutlet var window: NSWindow
 
-
-    func applicationDidFinishLaunching(aNotification: NSNotification?) {
+    func applicationDidFinishLaunching(aNotification: NSNotification?)
+    {
         // Insert code here to initialize your application
     }
 
-    func applicationWillTerminate(aNotification: NSNotification?) {
+    func applicationWillTerminate(aNotification: NSNotification?)
+    {
         // Insert code here to tear down your application
     }
 
-
+    override func awakeFromNib()
+    {
+        let bar = NSStatusBar.systemStatusBar();
+        
+        //statusItemWithLength expects CGFloat; NSVariableStatusItemLength is CInt
+        let length = CDouble(NSVariableStatusItemLength);
+        
+        let item = bar.statusItemWithLength(length);
+        
+        let icon = IconView(imageName: "icon", item: item);
+        item.view = icon;
+    }
 }
 
