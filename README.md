@@ -12,3 +12,5 @@ Some notes as of the first release of Swift with XCode 6 Beta:
 ### Resources
 
 [Swift Language Guide](https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/index.html#//apple_ref/doc/uid/TP40014097)
+
+[Access modifier support forthcoming](https://devforums.apple.com/thread/227288)
