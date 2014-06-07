@@ -1,0 +1,414 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65DED9621943997E0059A266 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DED9611943997E0059A266 /* main.swift */; };
+		65DED9641943997E0059A266 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DED9631943997E0059A266 /* AppDelegate.swift */; };
+		65DED9661943997E0059A266 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65DED9651943997E0059A266 /* Images.xcassets */; };
+		65DED9691943997E0059A266 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65DED9671943997E0059A266 /* MainMenu.xib */; };
+		65DED9751943997E0059A266 /* SwiftStatusBarApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DED9741943997E0059A266 /* SwiftStatusBarApplicationTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		65DED96F1943997E0059A266 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65DED9541943997E0059A266 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65DED95B1943997E0059A266;
+			remoteInfo = SwiftStatusBarApplication;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		65DED95C1943997E0059A266 /* SwiftStatusBarApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftStatusBarApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65DED9601943997E0059A266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65DED9611943997E0059A266 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		65DED9631943997E0059A266 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		65DED9651943997E0059A266 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		65DED9681943997E0059A266 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		65DED96E1943997E0059A266 /* SwiftStatusBarApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftStatusBarApplicationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		65DED9731943997E0059A266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65DED9741943997E0059A266 /* SwiftStatusBarApplicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftStatusBarApplicationTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65DED9591943997E0059A266 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65DED96B1943997E0059A266 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		65DED9531943997E0059A266 = {
+			isa = PBXGroup;
+			children = (
+				65DED95E1943997E0059A266 /* SwiftStatusBarApplication */,
+				65DED9711943997E0059A266 /* SwiftStatusBarApplicationTests */,
+				65DED95D1943997E0059A266 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		65DED95D1943997E0059A266 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65DED95C1943997E0059A266 /* SwiftStatusBarApplication.app */,
+				65DED96E1943997E0059A266 /* SwiftStatusBarApplicationTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65DED95E1943997E0059A266 /* SwiftStatusBarApplication */ = {
+			isa = PBXGroup;
+			children = (
+				65DED9631943997E0059A266 /* AppDelegate.swift */,
+				65DED9651943997E0059A266 /* Images.xcassets */,
+				65DED9671943997E0059A266 /* MainMenu.xib */,
+				65DED95F1943997E0059A266 /* Supporting Files */,
+			);
+			path = SwiftStatusBarApplication;
+			sourceTree = "<group>";
+		};
+		65DED95F1943997E0059A266 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				65DED9601943997E0059A266 /* Info.plist */,
+				65DED9611943997E0059A266 /* main.swift */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		65DED9711943997E0059A266 /* SwiftStatusBarApplicationTests */ = {
+			isa = PBXGroup;
+			children = (
+				65DED9741943997E0059A266 /* SwiftStatusBarApplicationTests.swift */,
+				65DED9721943997E0059A266 /* Supporting Files */,
+			);
+			path = SwiftStatusBarApplicationTests;
+			sourceTree = "<group>";
+		};
+		65DED9721943997E0059A266 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				65DED9731943997E0059A266 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		65DED95B1943997E0059A266 /* SwiftStatusBarApplication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65DED9781943997E0059A266 /* Build configuration list for PBXNativeTarget "SwiftStatusBarApplication" */;
+			buildPhases = (
+				65DED9581943997E0059A266 /* Sources */,
+				65DED9591943997E0059A266 /* Frameworks */,
+				65DED95A1943997E0059A266 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftStatusBarApplication;
+			productName = SwiftStatusBarApplication;
+			productReference = 65DED95C1943997E0059A266 /* SwiftStatusBarApplication.app */;
+			productType = "com.apple.product-type.application";
+		};
+		65DED96D1943997E0059A266 /* SwiftStatusBarApplicationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65DED97B1943997E0059A266 /* Build configuration list for PBXNativeTarget "SwiftStatusBarApplicationTests" */;
+			buildPhases = (
+				65DED96A1943997E0059A266 /* Sources */,
+				65DED96B1943997E0059A266 /* Frameworks */,
+				65DED96C1943997E0059A266 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65DED9701943997E0059A266 /* PBXTargetDependency */,
+			);
+			name = SwiftStatusBarApplicationTests;
+			productName = SwiftStatusBarApplicationTests;
+			productReference = 65DED96E1943997E0059A266 /* SwiftStatusBarApplicationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65DED9541943997E0059A266 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Tommy Leung";
+				TargetAttributes = {
+					65DED95B1943997E0059A266 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					65DED96D1943997E0059A266 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 65DED95B1943997E0059A266;
+					};
+				};
+			};
+			buildConfigurationList = 65DED9571943997E0059A266 /* Build configuration list for PBXProject "SwiftStatusBarApplication" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 65DED9531943997E0059A266;
+			productRefGroup = 65DED95D1943997E0059A266 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65DED95B1943997E0059A266 /* SwiftStatusBarApplication */,
+				65DED96D1943997E0059A266 /* SwiftStatusBarApplicationTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65DED95A1943997E0059A266 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65DED9661943997E0059A266 /* Images.xcassets in Resources */,
+				65DED9691943997E0059A266 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65DED96C1943997E0059A266 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65DED9581943997E0059A266 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65DED9641943997E0059A266 /* AppDelegate.swift in Sources */,
+				65DED9621943997E0059A266 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65DED96A1943997E0059A266 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65DED9751943997E0059A266 /* SwiftStatusBarApplicationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		65DED9701943997E0059A266 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65DED95B1943997E0059A266 /* SwiftStatusBarApplication */;
+			targetProxy = 65DED96F1943997E0059A266 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		65DED9671943997E0059A266 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65DED9681943997E0059A266 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		65DED9761943997E0059A266 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		65DED9771943997E0059A266 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		65DED9791943997E0059A266 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SwiftStatusBarApplication/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		65DED97A1943997E0059A266 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SwiftStatusBarApplication/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		65DED97C1943997E0059A266 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SwiftStatusBarApplication.app/Contents/MacOS/SwiftStatusBarApplication";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SwiftStatusBarApplicationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		65DED97D1943997E0059A266 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SwiftStatusBarApplication.app/Contents/MacOS/SwiftStatusBarApplication";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SwiftStatusBarApplicationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65DED9571943997E0059A266 /* Build configuration list for PBXProject "SwiftStatusBarApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65DED9761943997E0059A266 /* Debug */,
+				65DED9771943997E0059A266 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65DED9781943997E0059A266 /* Build configuration list for PBXNativeTarget "SwiftStatusBarApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65DED9791943997E0059A266 /* Debug */,
+				65DED97A1943997E0059A266 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		65DED97B1943997E0059A266 /* Build configuration list for PBXNativeTarget "SwiftStatusBarApplicationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65DED97C1943997E0059A266 /* Debug */,
+				65DED97D1943997E0059A266 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 65DED9541943997E0059A266 /* Project object */;
+}
