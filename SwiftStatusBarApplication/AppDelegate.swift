@@ -20,7 +20,8 @@ class AppDelegate: NSObject, NSApplicationDelegate
         let bar = NSStatusBar.systemStatusBar();
         
         //statusItemWithLength expects CGFloat; NSVariableStatusItemLength is CInt
-        let length = CDouble(NSVariableStatusItemLength);
+        // NSVariableStatusItemLength is throwing a linker error on Xcode 6b3
+        let length = CDouble(-1);
         
         let item = bar.statusItemWithLength(length);
         
