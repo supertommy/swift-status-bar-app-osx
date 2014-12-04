@@ -19,10 +19,7 @@ class AppDelegate: NSObject, NSApplicationDelegate
     {
         let bar = NSStatusBar.systemStatusBar();
         
-        //statusItemWithLength expects CGFloat; NSVariableStatusItemLength is CInt
-        let length = CDouble(NSVariableStatusItemLength);
-        
-        let item = bar.statusItemWithLength(CGFloat(length));
+        let item = bar.statusItemWithLength(-1);
         
         self.icon = IconView(imageName: "icon", item: item);
         item.view = icon;
