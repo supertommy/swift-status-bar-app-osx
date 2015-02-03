@@ -10,19 +10,16 @@ import Cocoa
 
 class AppDelegate: NSObject, NSApplicationDelegate
 {
-    @IBOutlet var window: NSWindow
-    @IBOutlet var popover : NSPopover
+    @IBOutlet var window: NSWindow?
+    @IBOutlet var popover : NSPopover?
     
     let icon: IconView;
     
-    init()
+    override init()
     {
         let bar = NSStatusBar.systemStatusBar();
         
-        //statusItemWithLength expects CGFloat; NSVariableStatusItemLength is CInt
-        let length = CDouble(NSVariableStatusItemLength);
-        
-        let item = bar.statusItemWithLength(length);
+        let item = bar.statusItemWithLength(-1);
         
         self.icon = IconView(imageName: "icon", item: item);
         item.view = icon;
@@ -51,10 +48,10 @@ class AppDelegate: NSObject, NSApplicationDelegate
         icon.onMouseDown = {
             if (icon.isSelected)
             {
-                self.popover.showRelativeToRect(rect, ofView: icon, preferredEdge: edge);
+                self.popover?.showRelativeToRect(rect, ofView: icon, preferredEdge: edge);
                 return
             }
-            self.popover.close()
+            self.popover?.close()
         }
     }
 }
