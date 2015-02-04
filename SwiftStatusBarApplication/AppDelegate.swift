@@ -20,7 +20,8 @@ class AppDelegate: NSObject, NSApplicationDelegate
     {
         let bar = NSStatusBar.systemStatusBar();
         
-        let item = bar.statusItemWithLength(-1);
+        let length: CGFloat = -1 //NSVariableStatusItemLength
+        let item = bar.statusItemWithLength(length);
         
         self.icon = IconView(imageName: "icon", item: item);
         item.view = icon;
@@ -40,9 +41,7 @@ class AppDelegate: NSObject, NSApplicationDelegate
 
     override func awakeFromNib()
     {
-        //NSRectEdge is not enumerated yet; NSMinYEdge == 1
-        //@see NSGeometry.h
-        let edge = 1
+        let edge = NSMinYEdge
         let icon = self.icon
         let rect = icon.frame
         
