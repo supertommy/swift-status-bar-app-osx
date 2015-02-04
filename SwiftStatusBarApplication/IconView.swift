@@ -11,8 +11,8 @@ import Cocoa
 
 class IconView : NSView
 {
-    var image: NSImage
-    let item: NSStatusItem
+    private(set) var image: NSImage
+    private let item: NSStatusItem
     
     var onMouseDown: () -> ()
     

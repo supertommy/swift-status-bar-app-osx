@@ -14,7 +14,7 @@ class AppDelegate: NSObject, NSApplicationDelegate
     @IBOutlet var window: NSWindow?
     @IBOutlet var popover : NSPopover?
     
-    let icon: IconView;
+    private let icon: IconView;
     
     override init()
     {
