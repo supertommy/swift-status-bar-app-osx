@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		65DED9621943997E0059A266 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DED9611943997E0059A266 /* main.swift */; };
 		65DED9641943997E0059A266 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DED9631943997E0059A266 /* AppDelegate.swift */; };
 		65DED9661943997E0059A266 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65DED9651943997E0059A266 /* Images.xcassets */; };
 		65DED9691943997E0059A266 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65DED9671943997E0059A266 /* MainMenu.xib */; };
@@ -29,7 +28,6 @@
 /* Begin PBXFileReference section */
 		65DED95C1943997E0059A266 /* SwiftStatusBarApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftStatusBarApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65DED9601943997E0059A266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		65DED9611943997E0059A266 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		65DED9631943997E0059A266 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65DED9651943997E0059A266 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		65DED9681943997E0059A266 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -93,7 +91,6 @@
 			isa = PBXGroup;
 			children = (
 				65DED9601943997E0059A266 /* Info.plist */,
-				65DED9611943997E0059A266 /* main.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -225,7 +222,6 @@
 			files = (
 				65DED9641943997E0059A266 /* AppDelegate.swift in Sources */,
 				65DED97F194399AB0059A266 /* IconView.swift in Sources */,
-				65DED9621943997E0059A266 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +411,7 @@
 				65DED97A1943997E0059A266 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65DED97B1943997E0059A266 /* Build configuration list for PBXNativeTarget "SwiftStatusBarApplicationTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +420,7 @@
 				65DED97D1943997E0059A266 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
